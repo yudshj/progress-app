@@ -1,0 +1,32 @@
+# Node.js 和 TypeScript 生成的文件
+/dist
+/node_modules
+
+# TypeScript 生成的声明文件（如果不需要提交声明文件的话）
+*.d.ts
+
+# 编辑器/IDE 配置文件
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 环境变量文件（如果使用了 .env 文件）
+.env
+
+# NPM 包缓存
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# 忽略 TypeScript 编译器生成的其他文件
+*.js
+*.js.map
+
+# 临时文件
+*.log
+*.swp

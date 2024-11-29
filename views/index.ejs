@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 50px; }
+        .progress-container {
+            width: 100%; 
+            background-color: #f3f3f3;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .progress-bar {
+            width: <%= progress %>%;
+            height: 30px;
+            background-color: #4caf50;
+            text-align: center;
+            color: white;
+            line-height: 30px;
+            border-radius: 5px;
+        }
+        .status {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>文件数量进度</h1>
+    <div class="progress-container">
+        <div class="progress-bar"><%= current_count %> / <%= total %></div>
+    </div>
+    
+    <!-- 渲染转化后的Markdown内容 -->
+    <div class="status">
+        <%- markdownHtml %>  <!-- 使用 EJS 输出HTML -->
+    </div>
+</body>
+</html>
